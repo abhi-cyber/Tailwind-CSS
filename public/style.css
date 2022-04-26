@@ -3,6 +3,8 @@ Here we initialize Tailwind css and build it from here.
 It is then imported into public "style.css". 
 */
 
+/* The below commands import css commandsin public/style.css */
+
 .rounded {
   border-radius: 0.25rem;
 }
