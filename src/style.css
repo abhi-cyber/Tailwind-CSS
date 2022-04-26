@@ -6,3 +6,18 @@ It is then imported into public "style.css".
 @tailwind components;
 @tailwind utilities;
 @tailwind base;
+
+/* Here you can call the tailwind css rather than writing it in the html file */ 
+
+.btn{
+    /* @apply --> Lets u call the tailwind css */
+    @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue{
+    @apply bg-red-500 text-white;
+}
+
+.btn-blue:hover{
+    @apply bg-blue-300;
+}
