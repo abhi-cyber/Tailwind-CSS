@@ -2,3 +2,6 @@
 Here we initialize Tailwind css and build it from here.
 It is then imported into public "style.css". 
 */
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
