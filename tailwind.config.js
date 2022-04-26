@@ -4,4 +4,10 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  purge: {
+    enabled: true,
+    content: [
+        './public/*.html'
+    ]
+}
 }
