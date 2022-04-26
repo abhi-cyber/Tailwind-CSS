@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-blue-700"> <!-- syntax bg-<color>-<100(lightest) to 900(darkest)>--> 
-    <div class="container flex justify-center">
+    
+    <div class="container"> <!-- flex justify-center -->
+
+        <!-------------------- BUTTON COMPONENTS ----------------------------->
         <button class="bg-blue-400 hover:bg-blue-300 p-4 text-bold font-white rounded">Click Here</button>  
         <!-- Here p-4 is padding from all sides. You can also use px-<> or py-<> can be used to pad according to axis -->
         
@@ -16,6 +19,15 @@
         <button class="btn btn-blue">
             Find Groups
         </button>
+
+        
+        <!-------------------- ALERT COMPONENTS ----------------------------->
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative my-5
+        " role="alert">
+            <strong class="font-bold">Alert!</strong>
+            <span class="block sm:inline">Please update your pwd</span>
+        </div>
+        
     </div>
 </body>
 </html>
