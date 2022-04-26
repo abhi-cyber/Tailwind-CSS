@@ -47,6 +47,10 @@ It is then imported into public "style.css".
   position: relative;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -59,6 +63,18 @@ It is then imported into public "style.css".
 
 .ml-6 {
   margin-left: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -81,8 +97,16 @@ It is then imported into public "style.css".
   max-width: 24rem;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .justify-center {
@@ -126,6 +150,11 @@ It is then imported into public "style.css".
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -144,8 +173,27 @@ It is then imported into public "style.css".
   padding-bottom: 0.75rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-6xl {
@@ -163,8 +211,34 @@ It is then imported into public "style.css".
   line-height: 1.5rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-red-700 {
@@ -180,6 +254,16 @@ It is then imported into public "style.css".
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-indigo-600 {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
 .shadow-xl {
@@ -687,8 +771,45 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
 
+.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 @media (min-width: 640px) {
   .sm\:inline {
     display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:w-64 {
+    width: 16rem;
+  }
+
+  .lg\:flex-shrink-0 {
+    flex-shrink: 0;
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 }
